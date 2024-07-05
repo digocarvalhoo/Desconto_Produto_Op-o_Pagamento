@@ -19,13 +19,10 @@ Exemplo de Uso
 Suponha que o preço normal do produto seja R$ 100 e você queira pagar à vista no Dinheiro:
 
 ```javascript
-function calcularPagamento(preco, desconto) {
-return preco - (preco * (desconto / 100));
-}
+const ValorProduto = 100;
+const OpcaoPagamento = 2;
 
-const precoProduto = 100;
-const desconto = 15;
-
-console.log('Valor a ser pago:', calcularPagamento(precoProduto, desconto));
+// O resultado será o valor com 15% de desconto
+console.log('À vista no Dinheiro ou PIX, valor a ser pago: ', AplicarDesconto(ValorProduto, 15));
 ```
 Este README fornece uma visão geral do projeto e orienta o usuário sobre como configurar e usar a calculadora de pagamento de produtos. Você pode personalizá-lo conforme necessário e adicionar mais detalhes ou exemplos conforme seu projeto evolui.
